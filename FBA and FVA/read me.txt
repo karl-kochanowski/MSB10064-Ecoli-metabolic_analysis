@@ -1,0 +1,23 @@
+Code related to: Kochanowski et al, MSB (2021)
+Contact: Karl Kochanowski, karl.kochanowski@gmail.com
+
+- Matlab scripts to reproduce constrained flux balance analysis and flux variability analysis
+- Tested in Win 10 64x machine with: Matlab 2019A, Gurobi V9.0.2, Cobra toolbox 3.0 (accessed on December 18th 2020)
+
+Software needed to run the code:
+- Matlab (at least 2019A)
+- Gurobi (tested with Gurobi V9.0.2, free academic licences available at https://www.gurobi.com/ )
+- Cobra toolbox 3.0 (https://github.com/opencobra/cobratoolbox/ )
+
+How-to:
+run "main_analysis_gsFBA" to perform FBA, FVA, and performed quality control analyses
+NOTE: FVA takes a long time (>1h)
+
+For reference, the analysis output is included in the \Data subfolder as "20210112_analysis_output.mat"
+- FBA flux estimates for catabolic and anabolic limitations (in total: 16 conditions) are found in output.FBA.flux
+- corresponding minimal/maximal FVA ranges are found in output.FBA.minFVA and output.FBA.maxFVA
+- the modified (but unconstrained) FBA model is found in output.model
+- the 16 modified and constrained FBA models (one per condition, constrained by physiology) are found in output.FBA.model 
+
+
+
