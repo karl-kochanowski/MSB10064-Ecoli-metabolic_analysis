@@ -1,0 +1,20 @@
+Code related to: Kochanowski et al, MSB (2021)
+Contact: Karl Kochanowski, karl.kochanowski@gmail.com
+
+- Matlab scripts to reproduce regulation analysis
+- Tested in Win 10 64x machine with: Matlab 2019A
+
+Software needed to run the code:
+- Matlab (at least 2019A)
+
+
+How-to:
+run "main_regulation_analysis" to perform all analysis steps and reproduce all related figures
+
+For reference, the analysis output is included in the \Data subfolder as "20210126_analysis_output.mat"
+- results of regulation analysis relating flux and protein changes are found in the data structure data.regulationAnalysis.fluxVSprotein
+- results of regulation analysis also considering substrates are found in the data structure data.regulationAnalysis.enzymeSaturation
+- in each data structure, the tables labeled "export" correspond to the data in EV table 5 of the manuscript
+
+
+
